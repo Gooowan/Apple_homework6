@@ -107,17 +107,17 @@ struct Task3 {
         print("Executing Graph 2")
         
         let nodeJ = Node(name: "J")
-                let nodeI = Node(name: "I", dependencies: [nodeJ])
-                let nodeH = Node(name: "H", dependencies: [nodeI])
-                let nodeG = Node(name: "G", dependencies: [nodeH])
-                let nodeF2 = Node(name: "F", dependencies: [nodeG])
-                let nodeE2 = Node(name: "E", dependencies: [nodeJ])
-                let nodeD2 = Node(name: "D", dependencies: [nodeI])
-                let nodeC2 = Node(name: "C", dependencies: [nodeH])
-                let nodeB2 = Node(name: "B", dependencies: [nodeG])
-                let nodeA2 = Node(name: "A", dependencies: [nodeB2, nodeC2, nodeD2, nodeE2, nodeF2])
-                
-                let graph2 = Graph(nodes: [nodeA2, nodeB2, nodeC2, nodeD2, nodeE2, nodeF2, nodeG, nodeH, nodeI, nodeJ])
-                graph2.traverse()
+        let nodeI = Node(name: "I", dependencies: [nodeJ])
+        let nodeH = Node(name: "H", dependencies: [nodeI])
+        let nodeG = Node(name: "G", dependencies: [nodeH])
+        let nodeF2 = Node(name: "F", dependencies: [nodeG])
+        let nodeE2 = Node(name: "E", dependencies: [nodeJ])
+        let nodeD2 = Node(name: "D", dependencies: [nodeI])
+        let nodeC2 = Node(name: "C", dependencies: [nodeH])
+        let nodeB2 = Node(name: "B", dependencies: [nodeG])
+        let nodeA2 = Node(name: "A", dependencies: [nodeB2, nodeC2, nodeD2, nodeE2, nodeF2])
+        
+        let graph2 = Graph(nodes: [nodeA2, nodeB2, nodeC2, nodeD2, nodeE2, nodeF2, nodeG, nodeH, nodeI, nodeJ])
+        graph2.traverse()
     }
 }
